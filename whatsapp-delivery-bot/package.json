@@ -1,0 +1,15 @@
+{
+  "name": "whatsapp-delivery-bot",
+  "version": "1.0.0",
+  "description": "Bot de Delivery para WhatsApp usando Venom Bot e página de admin para QR Code",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "basic-auth": "^2.0.1",
+    "venom-bot": "^5.0.1"
+  }
+}

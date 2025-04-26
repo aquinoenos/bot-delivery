@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel DeliveryBot</title>
+</head>
+<body style="text-align: center; margin-top: 50px;">
+  <h1>Painel de Admin - DeliveryBot</h1>
+  <h3>Escaneie o QR Code para conectar o WhatsApp</h3>
+  <div id="qrcode">
+    Carregando QR Code...
+  </div>
+  <script>
+    setInterval(() => {
+      fetch('/qr')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('qrcode').innerHTML = html;
+        });
+    }, 3000);
+  </script>
+</body>
+</html>
